@@ -93,6 +93,7 @@ header nav {
 header nav a {
   padding: 12px;
   margin: 0px;
+  font-size: 20px;
 }
 .title-container {
   position: relative;
