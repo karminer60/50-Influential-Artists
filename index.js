@@ -267,14 +267,14 @@ function get20s(array){
   
   let newArray = [];
   for(let i=0; i < array.length; i++){
-    
-    let text= array[i].years;
-    var integer = parseInt(text);
+    let initialText= array[i].years;
+    let text = initialText.split(/-/);
+    var integer = text[0];
     if (integer >= 1800 && integer <= 1900 ){
-      newArray.push(array[i].names);
+      newArray.push(array[i].name);
     }
     
-    
+  
   }
   return newArray
 }
@@ -292,7 +292,7 @@ function lotsOfArt(/* Code here */){
     let text= array[i].paintings;
     var integer = parseInt(text, 10);
     if (integer > 100 ){
-      newArray.push(array[i].names);
+      newArray.push(array[i].name);
     }
     
     
