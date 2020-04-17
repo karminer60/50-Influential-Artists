@@ -335,17 +335,20 @@ function addArtist(array,newArray){
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
 
 function checkArtist(string, array){
-  for(let i = 0; i < array.length; i++ ){
-    if( array[i].name== string){
+  for(let i = 0; i < array.length ; i++){
+    if( array[i].name == string){
       return true;
-    }
+      }
     else{
       continue;
+      }
     }
 
   }
 
-  console.log(checkArtist('Pablo Picasso'))
+  console.log(checkArtist('Pablo Picasso', artists))
+
+
 // 🎨🎨 STRETCH 🎨🎨//
 
 /* STRETCH 1: Programtically console.log HTML element structure 
