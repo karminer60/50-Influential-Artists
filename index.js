@@ -250,12 +250,12 @@ function getArtistByIndex(id, array) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-//function removeArtist(array,index) {
-  //array.splice(index, index + 1);
-  //return array;
-  //}
+function removeArtist(array,index) {
+  array.splice(index, index + 1);
+  return array;
+  }
 
-  //console.log(removeArtist(artists, 0));
+  console.log(removeArtist(artists, 0));
   
   
   /**
@@ -269,7 +269,7 @@ function get20s(array){
   for(let i=0; i < array.length; i++){
     
     let text= array[i].years;
-    var integer = parseInt(text, 10);
+    var integer = parseInt(text);
     if (integer >= 1800 && integer <= 1900 ){
       newArray.push(array[i].names);
     }
@@ -315,8 +315,9 @@ nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
 function addArtist(array,newArray){
-
+  
   let veryNewArray = array.push(newArray);
+
   return veryNewArray;
 
   }
@@ -329,7 +330,7 @@ function addArtist(array,newArray){
   nationality: 'American',
   bio: 'lorem ipsum'} ]
 
-  console.log(addArtist(array));
+  console.log(addArtist(artists,array));
 
 
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
