@@ -250,12 +250,12 @@ function getArtistByIndex(id, array) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(array,index) {
-  array.splice(index, index + 1);
-  return array;
-  }
+//function removeArtist(array,index) {
+  //array.splice(index, index + 1);
+  //return array;
+  //}
 
-  console.log(removeArtist(artists, 0));
+  //console.log(removeArtist(artists, 0));
   
   
   /**
@@ -263,29 +263,29 @@ function removeArtist(array,index) {
 
 /* Task 5: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
 
-function get20s(array){
+//function get20s(array){
   
-  let newArray = [];
-  for(let i=0; i < array.length; i++){
-    let initialText= array[i].years;
-    let text = initialText.split(/-/);
-    var integer = text[0];
-    if (integer >= 1800 && integer <= 1900 ){
-      newArray.push(array[i].name);
-    }
+  //let newArray = [];
+  //for(let i=0; i < array.length; i++){
+    //let initialText= array[i].years;
+    //let text = initialText.split(/-/);
+    //var integer = text[0];
+    //if (integer >= 1800 && integer <= 1900 ){
+      //newArray.push(array[i].name);
+    //}
     
   
-  }
-  return newArray
-}
+  //}
+  //return newArray
+//}
 
-  console.log(get20s(artists));
+  //console.log(get20s(artists));
 
   
 
 /* Task 6: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(array){
 
   let newArray = [];
   for(let i=0; i < array.length; i++){
@@ -300,7 +300,7 @@ function lotsOfArt(/* Code here */){
   return newArray
 }
 
-  console.log(get20s(artists));
+console.log(lotsOfArt(artists));
 
  
 
@@ -314,23 +314,23 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(array,newArray){
+function addArtist(array, artist){
   
-  let veryNewArray = array.push(newArray);
+  array.push(artist);
 
-  return veryNewArray;
+}
 
-  }
-
-  let array = [
-  {id: 21,
+let artist = {
+  id: 21,
   name: 'Karina', 
   years: '1991 - current day',
-  genre: 'Web Design', 
+  genre: 'Web Development', 
   nationality: 'American',
-  bio: 'lorem ipsum'} ]
+  bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'} 
 
-  console.log(addArtist(artists,array));
+addArtist(artists,artist);
+
+console.log(artists);
 
 
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
@@ -339,15 +339,14 @@ function checkArtist(string, array){
   for(let i = 0; i < array.length ; i++){
     if( array[i].name == string){
       return true;
-      }
-    else{
-      continue;
-      }
     }
-
+    
+    
   }
+  return false;
+} 
 
-  console.log(checkArtist('Pablo Picasso', artists))
+console.log(checkArtist('Eric Emily', artists))
 
 
 // 🎨🎨 STRETCH 🎨🎨//
