@@ -26,6 +26,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. How would you describe preprocessing to someone new to CSS?
 
+
 Preprocessing allows you to write less code using a preprocessor like Less CSS and use less code. This code is then compiled or translated into vanilla CSS.
 
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
