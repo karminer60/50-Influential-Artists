@@ -1,16 +1,24 @@
 #button {
+  position: absolute;
+  width: 10%;
+  bottom: 0;
+  text-align: center;
+  padding-bottom: 20px;
+}
+#button {
   font-size: 20px;
   font-family: sans-serif;
   display: block;
   background-color: white;
   margin: 0 10px 20px;
   cursor: pointer;
-  width: 20px;
+  width: 200px;
   height: 45px;
   border-radius: 10px;
   color: black;
   text-align: center;
   padding-top: 10px;
+  margin-bottom: 0px;
 }
 img:hover {
   opacity: 0.8;
@@ -109,55 +117,61 @@ header nav {
 }
 header nav a {
   padding: 12px;
-  margin: 0px;
-  font-size: 40px;
+  margin: 15px;
+  font-size: 30px;
 }
 .title-container {
   position: relative;
   text-align: center;
   color: white;
-  border-bottom: 1px solid grey;
   padding-bottom: 40px;
 }
 .title-container img {
   width: 70%;
+  padding-bottom: 60px;
+  border-bottom: 1px solid grey;
 }
-#mainTitle {
+#textBlock #mainTitle {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 30px;
+  font-size: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
 }
-#button {
+#textBlock #button {
   position: absolute;
-  width: 10%;
-  bottom: 0;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
-  padding-bottom: 20px;
-  margin-bottom: 300px;
-  margin-left: 1130px;
-  font-size: 30px;
 }
 .artists-container {
   display: flex;
   justify-content: center;
-  margin: 0px;
-  padding-top: 40px;
+  margin-top: 40px;
+  margin-left: 400px;
+  margin-right: 400px;
 }
 .artists-container .artist {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 70%;
 }
 .artists-container .artist img {
-  width: 40%;
+  width: 70%;
+  border-radius: 10px;
+  margin: 10px;
 }
 .artists-container .artist .bio {
   text-align: center;
-  width: 40%;
-}
-#mainTitle {
-  font-size: 60px;
+  width: 70%;
+  padding: 20px;
+  font-size: 16px;
 }
